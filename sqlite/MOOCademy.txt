@@ -1,0 +1,12 @@
+'cours' (
+	'id' INTEGER PRIMARY KEY AUTOINCREMENT,
+	'title' TEXT,
+	'desc' TEXT	
+);
+
+'lessons' (
+	'id' INTEGER PRIMARY KEY AUTOINCREMENT,
+	'id_cours' INTEGER,
+	'title' TEXT,
+	'body' TEXT
+);

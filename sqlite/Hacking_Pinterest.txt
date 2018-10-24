@@ -1,0 +1,17 @@
+'users' (
+	'id' INTEGER PRIMARY KEY AUTOINCREMENT,
+	'name' TEXT
+);
+
+'pins' (
+	'id' INTEGER PRIMARY KEY AUTOINCREMENT,
+	'id_user' INTEGER,
+	'url' TEXT
+);
+
+'comments' (
+	'id' INTEGER PRIMARY KEY AUTOINCREMENT,
+	'id_pins' INTEGER,
+	'id_user' INTEGER,
+	'content' TEXT
+);

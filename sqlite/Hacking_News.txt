@@ -1,0 +1,18 @@
+'users' (
+	'id' INTEGER PRIMARY KEY AUTOINCREMENT,
+	'name' TEXT
+);
+
+'links' (
+	'id' INTEGER PRIMARY KEY AUTOINCREMENT,
+	'id_user' INTEGER,
+	'content' TEXT
+);
+
+'comments' (
+	'id' INTEGER PRIMARY KEY AUTOINCREMENT,
+	'id_links' INTEGER,
+	'id_user' INTEGER,
+	'date' DATETIME,
+	'id_mother_comment' INTEGER
+);
